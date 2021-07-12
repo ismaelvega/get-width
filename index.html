@@ -12,8 +12,11 @@
         <h1 id="heightText" style="font-family: Arial;">Height: </h1>
     </div>
     <script>
-        document.getElementById('widthText').innerHTML = `Width: ${window.innerWidth}`
-        document.getElementById('heightText').innerHTML = `Height: ${window.innerHeight}`
+        setInterval(() => {
+            document.getElementById('widthText').innerHTML = `Width: ${window.innerWidth}`
+            document.getElementById('heightText').innerHTML = `Height: ${window.innerHeight}`
+        }, 100)
+        
     </script>
 </body>
 </html>
